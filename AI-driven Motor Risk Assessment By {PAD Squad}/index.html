@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Motor Insurance Risk Predictor</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-analytics-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-storage-compat.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-car"></i> Motor Insurance Risk Prediction</h1>
+        
+        <div class="upload-section">
+            <h2>Upload Your Data</h2>
+            <p>Please upload a CSV file containing the required insurance data</p>
+            
+            <form id="uploadForm">
+                <div class="file-input-wrapper">
+                    <input type="file" id="csvFile" accept=".csv" required>
+                    <label for="csvFile">
+                        <i class="fas fa-file-csv"></i> Choose CSV File
+                    </label>
+                    <span id="fileName"></span>
+                </div>
+                <button type="submit">
+                    <i class="fas fa-chart-line"></i> Analyze Risk
+                </button>
+            </form>
+        </div>
+
+        <div class="loading">
+            <div class="loading-spinner"></div>
+            <p>Analyzing your data...</p>
+        </div>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

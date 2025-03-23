@@ -1,0 +1,11 @@
+age,gender,vehicle_age,vehicle_type,claim_amount,previous_claims,driving_experience,marital_status,risk_score
+35,Male,3,Sedan,5000,1,5,Single,0.7
+45,Female,5,SUV,8000,0,15,Married,0.3
+28,Male,1,Hatchback,3000,0,3,Single,0.8
+52,Female,7,Sedan,12000,2,20,Married,0.4
+31,Male,2,Hatchback,4000,0,4,Single,0.6
+42,Female,4,SUV,9000,1,10,Married,0.5
+25,Male,1,Sedan,2500,0,2,Single,0.9
+38,Female,6,SUV,10000,1,8,Married,0.4
+29,Male,2,Hatchback,3500,0,3,Single,0.7
+48,Female,8,Sedan,15000,2,18,Married,0.3 

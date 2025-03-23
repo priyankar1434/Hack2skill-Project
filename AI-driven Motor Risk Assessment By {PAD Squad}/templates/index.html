@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV File Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>CSV File Analyzer</h1>
+        
+        <div class="upload-section">
+            <h2>Upload Your Data</h2>
+            <p>Upload your CSV file to analyze its contents and get detailed insights</p>
+            
+            <form id="uploadForm">
+                <div class="file-input-wrapper">
+                    <input type="file" id="csvFile" accept=".csv" required>
+                    <label for="csvFile">Choose CSV File</label>
+                    <span id="fileName"></span>
+                </div>
+                <button type="submit">Analyze File</button>
+            </form>
+        </div>
+
+        <div class="loading">
+            <div class="loading-spinner"></div>
+            <p>Analyzing your file...</p>
+        </div>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> 
